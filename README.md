@@ -59,7 +59,7 @@ A RESTful API service built with NestJS, PostgreSQL, and TypeORM that provides a
 1. Clone the repository:
    ```bash
    git clone https://github.com/TrongtrongJ/opn-restful-api.git
-   cd nest-commerce-api
+   cd opn-restful-api
    ```
 
 2. Install dependencies:
