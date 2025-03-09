@@ -36,10 +36,8 @@ describe('UserService', () => {
   });
 
   beforeEach(async () => {
-    jest.clearAllMocks();
+    jest.resetAllMocks();
   });
-
-  afterAll(async () => {});
 
   it('undertest service should be defined', () => {
     expect(service).toBeDefined();
@@ -47,7 +45,7 @@ describe('UserService', () => {
 
   describe('UserService createUser', () => {
     it('should successfully create a new user', async () => {
-      mockUserRepository.findOne.mockResolvedValue(null);
+      mockUserRepository.findOne.mockResolvedValueOnce(null);
       mockUserRepository.create.mockReturnValueOnce(expectedCreateUserRes);
       mockUserRepository.save.mockResolvedValueOnce(expectedCreateUserRes);
 
